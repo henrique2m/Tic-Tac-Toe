@@ -1,0 +1,65 @@
+div.container-invitation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-invitation form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.container-invitation form header {
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+div.container-invitation form input {
+    background: #8368b6;
+    height: 30px;
+    padding: 0 20px;
+    border: 1px solid #fde0b8;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+div.container-invitation form input::placeholder {
+    color: #fde0b8;
+}
+
+div.container-invitation form button {
+    background: #ff9a1a;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 15px;
+    height: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+div.container-invitation form div.buttonLoading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff9a1a;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 15px;
+    height: 48px;
+}
+
+div.container-invitation form button:hover {
+    background: #fff;
+    color: #ff9a1a;
+}

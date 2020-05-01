@@ -1,0 +1,267 @@
+div.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.main header {
+    width: 100%;
+    height: 60px;
+    background: #8368b6;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+.main header img {
+    width: 100px;
+}
+
+.main .dashboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .dashboard section {
+    width: 60%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.main .dashboard section div.avatar {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main .dashboard section div.avatar img {
+    width: 100%;
+    border: 1px solid #8368b6;
+    border-radius: 50%;
+}
+.main .dashboard section ul {
+    width: 80%;
+    list-style: none;
+    background: #ff9a1a;
+    margin-top: 30px;
+}
+
+.main .dashboard section p.header {
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background: #8368b6;
+    color: #fff;
+}
+
+.main .dashboard section p.header span {
+    width: 22px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background: #614d93;
+}
+
+.main .dashboard section p.header strong {
+    margin-left: 5px;
+}
+
+.main .dashboard section ul li {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.main .dashboard section ul li.border {
+    border-top: 1px solid #fff;
+}
+
+.main .dashboard section ul li.logout {
+    padding: 0;
+}
+
+.main .dashboard section ul li.logout button {
+    width: 100%;
+    height: 30px;
+    background: rgb(236, 86, 86);
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.main .dashboard section ul li.logout button:hover {
+    background: #614d93;
+    color: #ff9a1a;
+}
+
+.main .dashboard section ul li strong {
+    color: #fff;
+}
+
+.main .dashboard section div.footer {
+    width: 80%;
+    height: 170px;
+    background: #ff9a1a;
+    margin-top: 30px;
+}
+
+.main .dashboard aside {
+    width: 40%;
+    background: #8368b6;
+}
+
+.main .dashboard aside p.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20px;
+    background: #ff9a1a;
+    color: #fff;
+}
+.main .dashboard aside p.header span {
+    width: 22px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background: rgb(238, 125, 5);
+}
+
+.main .dashboard aside p.header strong {
+    margin-left: 5px;
+}
+
+.main .dashboard aside ul {
+    height: 450px;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0px 5px 5px 5px;
+    overflow-y: auto;
+}
+
+.main .dashboard aside ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    background: #fff;
+    border: 0;
+    border-radius: 10px;
+}
+
+.main .dashboard aside ul li div {
+    display: flex;
+    padding: 5px;
+}
+
+.main .dashboard aside ul li div img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8368b6;
+    border-radius: 50%;
+}
+
+.main .dashboard aside ul li div strong {
+    position: relative;
+    left: 5px;
+    margin: auto;
+    font-weight: bold;
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .dashboard aside ul li div div {
+    position: relative;
+    left: 15px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background: rgb(14, 235, 25);
+}
+
+.main .dashboard aside ul li button {
+    height: 60px;
+    border: 0;
+    width: 50px;
+    background: #ff9a1a;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #fff;
+}
+
+.main .dashboard aside ul li button:hover {
+    background: #614d93;
+    color: #ff9a1a;
+}
+
+.main .dashboard aside ul li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: 0;
+    width: 50px;
+    background: #ff9a1a;
+    color: #fff;
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+    .main .dashboard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1130px;
+        min-width: 300px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+        padding: 0 10px 30px 10px;
+    }
+    .main .dashboard section {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .main .dashboard aside {
+        width: 100%;
+        height: 500px;
+        background: #8368b6;
+        margin-top: 30px;
+    }
+    .main .dashboard aside ul li div strong {
+        position: relative;
+        left: 5px;
+        margin: auto;
+        font-weight: bold;
+        max-width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

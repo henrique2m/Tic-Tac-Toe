@@ -1,0 +1,58 @@
+div.container-gameOld {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    background: rgba(20, 20, 20, 0.6);
+    z-index: 12;
+}
+
+div.container-gameOld div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+div.container-gameOld div article {
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+
+div.container-gameOld div article div {
+    width: 200px;
+    height: 200px;
+}
+
+div.container-gameOld div strong {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    margin-top: 5px;
+}
+
+div.container-gameOld div button {
+    width: 150px;
+    height: 30px;
+    background: #7BDB94 ;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.4s;
+}
+
+div.container-gameOld div button:hover{
+    color: #7BDB94;
+    background: #fff;
+ }

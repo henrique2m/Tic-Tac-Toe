@@ -1,0 +1,77 @@
+div.container-gameOver {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    background: rgba(20, 20, 20, 0.6);
+    z-index: 12;
+}
+
+div.container-gameOver div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+div.container-gameOver div article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+div.container-gameOver article.fireworks {
+    position: absolute;
+    float: left;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+div.container-gameOver div article img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+
+div.container-gameOver div article div {
+    width: 150px;
+    height: 150px;
+}
+
+div.container-gameOver div strong {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+}
+
+div.container-gameOver div strong span {
+    color: #e0b917;
+}
+
+div.container-gameOver div button {
+    width: 150px;
+    height: 30px;
+    background: #7bdb94;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.4s;
+}
+
+div.container-gameOver div button:hover {
+    color: #7bdb94;
+    background: #fff;
+}

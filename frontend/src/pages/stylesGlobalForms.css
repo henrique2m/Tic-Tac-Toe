@@ -1,0 +1,82 @@
+div.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.container form img {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+div.container form p {
+    color: #5f30b8;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.container form input {
+    background: #8368b6;
+    height: 48px;
+    padding: 0 20px;
+    border: 1px solid #fde0b8;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+div.container form input::placeholder {
+    color: #fde0b8;
+}
+
+div.container form button {
+    background: #ff9a1a;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 15px;
+    height: 48px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+div.container form button.cancel {
+    background: #ff5050;
+}
+
+div.container form div.buttonLoading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff9a1a;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 15px;
+    height: 48px;
+}
+
+div.container form button:hover {
+    background: #fff;
+    color: #ff9a1a;
+}
+
+div.container form a {
+    margin-top: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+}
