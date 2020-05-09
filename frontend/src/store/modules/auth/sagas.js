@@ -53,6 +53,7 @@ export function* signOut({ payload }) {
             message: 'online',
         });
 
+        localStorage.removeItem('userOn');
         history.push('/');
     } catch (err) {
         return toast.error('Algo deu errado, tente novamente.');

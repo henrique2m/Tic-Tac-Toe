@@ -203,6 +203,56 @@ export default function Dashboard() {
         setAdversary(dataAdversary);
     }
 
+    useEffect(() => {
+        localStorage.setItem('userOn', true);
+    }, []);
+
+    window.onblur = function () {
+        async function offLine() {
+            const userOn = localStorage.getItem('userOn');
+            if (!userOn) return false;
+
+            try {
+                await api.post('socketDelete', {
+                    user: _idUser,
+                });
+
+                await api.post('socket', {
+                    message: 'online',
+                });
+            } catch (err) {
+                console.warn(
+                    'Algo de errado ocorreu ao tentar uma comunicação com o socket.'
+                );
+            }
+        }
+
+        offLine();
+    };
+
+    window.onfocus = function () {
+        async function onLine() {
+            const userOn = localStorage.getItem('userOn');
+            if (!userOn) return false;
+
+            try {
+                io(websocket, {
+                    query: { user: _idUser },
+                });
+
+                await api.post('socket', {
+                    message: 'online',
+                });
+            } catch (err) {
+                console.warn(
+                    'Algo de errado ocorreu ao tentar uma comunicação com o servidor'
+                );
+            }
+        }
+
+        onLine();
+    };
+
     function onClearAdversary(toggle) {
         if (toggle) {
             setStart({ profile, adversary });
