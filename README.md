@@ -1,9 +1,6 @@
 # Tic-Tac-Toe
 Tic-Tac-Toe é uma releitura do tradicional jogo da velha, um dos jogos mais antigos jogados pela humanidade. A origem é desconhecida, com indicações de que pode ter começado no antigo Egito, onde foram encontrados tabuleiros esculpidos na rocha, que teriam mais de 3.500 anos. Em nossa versão contemporânea você pode realizar uma partida com um amigo ou um desconhecido, o mais legal é que seu oponente pode estar em qualquer lugar do mundo. Você irá deixar seu adversário esperando?
 
-
-Tenha uma experiência memorável em : [Tic-Tac-Toe](https://tictactoe-br.herokuapp.com)
-
 #
 
 ## Uma interface amigável espera por você...
